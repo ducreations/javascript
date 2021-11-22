@@ -15,6 +15,14 @@ function reset() {
   document.getElementById("ageInDays").remove();
 }
 
+function generateCat() {
+  let image = document.createElement("img");
+  let div = document.getElementById("cat-img");
+  image.src =
+    "http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
+  div.appendChild(image);
+}
+
 /* console
 let currentDateTime = new Date();
 let ageInDays = (currentDateTime.getFullYear() - birthYear) * 365;
