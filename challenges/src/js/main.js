@@ -16,7 +16,7 @@ function reset() {
 }
 
 function generateCat() {
-  document.getElementById("cat-img").appendChild(newCatImage());
+  document.getElementById("cat-images").appendChild(newCatImage());
 }
 
 function newCatImage() {
@@ -69,7 +69,7 @@ function finalMessage([yourScore, botScore]) {
   if (yourScore === 0) {
     return { message: "You lost", color: "red" };
   } else if (yourScore === 0.5) {
-    return { message: "Tied", color: "yellow" };
+    return { message: "Tied", color: "#FCF55F" };
   } else {
     return { message: "You won!", color: "yellowgreen" };
   }
@@ -107,9 +107,9 @@ function rpsFrontEnd(yourPickImage, botPickImage, finalMessage) {
     imagesDatabase[botPickImage] +
     "' height=150 width=150 style='box-shadow: 0px 6px 50px rgba(255, 75, 50, 1)' />";
 
-  document.getElementById("flex-box-rps-div").appendChild(yourDiv);
-  document.getElementById("flex-box-rps-div").appendChild(messageDiv);
-  document.getElementById("flex-box-rps-div").appendChild(botDiv);
+  document.getElementById("rps-flexbox-result").appendChild(yourDiv);
+  document.getElementById("rps-flexbox-result").appendChild(messageDiv);
+  document.getElementById("rps-flexbox-result").appendChild(botDiv);
 }
 
 /* console version of challenge 1: convert your age in days

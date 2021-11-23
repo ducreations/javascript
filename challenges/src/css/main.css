@@ -15,9 +15,9 @@ h2 {
   text-align: center;
 }
 
-.flex-box-c1-container,
-.flex-box-c2-container,
-.flex-box-rps {
+.age-in-days-flexbox,
+.generate-cat-flexbox,
+.rps-flexbox {
   border: 1px solid black;
   display: flex;
   padding: 10px;
@@ -26,7 +26,7 @@ h2 {
   justify-content: space-around;
 }
 
-.flex-box-c2-container img {
+.generate-cat-flexbox img {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
   margin: 10px;
   max-width: 360px;
@@ -39,7 +39,7 @@ h2 {
   margin-bottom: 1em;
 }
 
-.flex-box-rps img:hover {
+.rps-flexbox img:hover {
   box-shadow: 0px 6px 50px rgba(80, 100, 255, 1);
   cursor: pointer;
 }
